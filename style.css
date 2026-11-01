@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Importation de la police élégante pour les titres */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+
+/* Style général du body (pour toutes les pages par défaut) */
+body {
+    background-color: #E4E0E1;
+    color: #2B1D14;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page-accueil {
+    background-color: #523524; 
+}
+
+/* En-tête et Menu de navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #3A261A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu a {
+    color: #D6C0B3;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #ffffff;
+    background-color: #AB886D;
+}
+
+/* Hero (Page d'accueil) */
+.hero {
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    flex: 1;
+}
+
+.hero-texte {
+    max-width: 60%;     
+}
+
+.hero-texte h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-texte p {
+    font-size: 18px;
+    margin-bottom: 10px;	
+}
+
+.hero-texte p.texte-secondaire {
+    font-size: 15px;
+    color: #F3EEEA;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-decouvrir {
+    display: inline-block;
+    background-color: #AB886D;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-decouvrir:hover {
+    background-color: #2B1D14;
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    width: 380px;
+    height: auto;
+}
+
+/* Contenu des pages internes */
+.page-contenu {
+    padding: 50px 10%;
+    text-align: center;
+    flex: 1;
+}
+
+.page-contenu h1 {
+    color: #3A261A;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.page-contenu p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Grille des cartes de café et autres pages */
+.grille-cafes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.carte-cafe {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 210px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.carte-cafe img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.carte-cafe h3 {
+    margin: 10px 0;
+    color: #3A261A;
+}
+
+.prix {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #AB886D;
+}
+
+
+.liste-prep {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+.carte-horizontale {
+    background-color: #3A261A;
+    border-radius: 12px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.numero-etape {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #AB886D;
+    min-width: 60px;
+    text-align: center;
+}
+
+.carte-info h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.carte-info p {
+    color: #D6C0B3;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Pied de page */
+footer {
+    background-color: #3A261A;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+	
+	
